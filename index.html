@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сайт собирается</title>
+<meta name="description" content="">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Сайт собирается">
+<meta property="og:description" content="">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://vkusno.andreytumanov.ru/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Вкусно жить!",
+  "jobTitle": "Кулинарный проект: вкусные рецепты и сбалансированное питание на каждый день",
+  "url": "https://vkusno.andreytumanov.ru/",
+  "sameAs": [
+    "https://dzen.ru/vkusno_zhit_tumanov"
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Manrope:wght@400;600&display=swap" media="print" onload="this.media='all'">
+<noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Manrope:wght@400;600&display=swap">
+</noscript>
+<link rel="stylesheet" href="style.css">
+<style>
+:root {
+  --шрифт-заголовков: Montserrat, Manrope, system-ui, sans-serif;
+  --шрифт-текста: Manrope, Montserrat, -apple-system, 'Segoe UI', sans-serif;
+  --цвет-фон: #FBF8F1;  --цвет-фон-2: #F3EADB;  --цвет-фон-карточки: #FFFFFF;
+  --цвет-текст: #1E3A34;  --цвет-текст-мягкий: #4F625C;  --цвет-текст-тихий: #5A6461;
+  --цвет-акцент: #2F6755;  --цвет-акцент-тёмный: #C9A55C;  --цвет-акцент-яркий: #7EA08C;
+  --цвет-акцент-глубже: #245444;  --цвет-акцент-маркер: #B23A2B;
+  --цвет-на-акценте: #FFFFFF;  --цвет-линия: #E9ECEA;
+  --цвет-тёмный-фон: #14201E;  --цвет-тёмный-фон-2: #1E3A34;  --цвет-тёмный-текст: #F3EADB;
+  --цвет-тёмный-фон-3: #1E3A34;  --цвет-тёмный-фон-4: #245444;
+  --цвет-тёплый: #C9A55C;  --цвет-тёплый-мягкий: #D8B873;
+  --цвет-стекло: color-mix(in srgb, #14201E 86%, transparent);
+  --тень: 0 18px 50px color-mix(in srgb, #1E3A34 10%, transparent);
+  --тень-чип: 0 10px 30px color-mix(in srgb, #1E3A34 12%, transparent);
+  --тень-глубокая: 0 24px 60px color-mix(in srgb, #14201E 35%, transparent);
+  --тень-спутник: 0 30px 60px color-mix(in srgb, #14201E 70%, transparent);
+  --тень-плиты: 0 40px 100px color-mix(in srgb, #14201E 70%, transparent);
+  --кегль-h1: 34px;  --кегль-h2: clamp(28px, 3vw, 42px);
+  --кегль-текст: 17px;  --кегль-лид: clamp(18px, 1.5vw, 22px);
+  --кегль-мелкий: 15px;  --кегль-кикер: 14px;  --разрядка-кикера: .16em;
+  --кегль-цифра: 30px;
+  --отступ-секции: clamp(64px, 9vw, 128px);  --отступ-блока: clamp(16px, 2vw, 28px);
+  --отступ-секции-тихо: clamp(48px, 7vw, 96px);  --отступ-секции-громко: clamp(72px, 10.5vw, 140px);
+  --ширина: 1180px;  --ширина-колонки: 600px;  --радиус: 18px;  --радиус-малый: 10px;
+  --радиус-карточки: 24px;  --радиус-плитки: 24px;  --радиус-телефон: 46px;  --кнопка-радиус: 999px;
+  --радиус-модуля: 18px;  --нить: 2px;
+  --плавность: cubic-bezier(.2, .7, .2, 1);  --длительность: .3s;
+  --цвет-тёплый-тёмный: #8A6420;
+}
+@media (min-width: 900px) {
+  :root { --кегль-h1: clamp(52px, 6vw, 86px); }
+}
+:root, .светлый { --цвет-кнопки: #2F6755; --цвет-на-кнопке: #FFFFFF; --цвет-кнопки-навёл: var(--цвет-акцент-тёмный); }
+.тёмный, .липкая-кнопка--тёмная { --цвет-кнопки: #C9A55C; --цвет-на-кнопке: #14201E; --цвет-кнопки-навёл: #D3B67B; }
+
+</style>
+<script>
+(function () {
+  var ЭТАЛОН = 0.535;                  // очко Open Sans — текстовой гарнитуры утверждённых макетов
+  var ПОТОЛОК = 1.2, МЁРТВАЯ = 0.02;   // выше потолка расползается раскладка; ближе к единице не трогаем вовсе
+  var КОМПЬЮТЕР = "(min-width: 900px)";
+  var ТОКЕНЫ = ["--кегль-текст", "--кегль-лид", "--кегль-мелкий", "--кегль-кикер"];
+  var корень = document.documentElement;
+  var холст = document.createElement("canvas").getContext("2d");
+  var ждём = 0;
+
+  function мера(буква) { var м = холст.measureText(буква); return (м && м.actualBoundingBoxAscent) || 0; }
+
+  function применить() {
+    ждём = 0;
+    if (!холст) { return; }
+
+    for (var i = 0; i < ТОКЕНЫ.length; i++) { корень.style.removeProperty(ТОКЕНЫ[i]); }
+    var стиль = getComputedStyle(корень), стек = стиль.getPropertyValue("--шрифт-текста").trim();
+    if (!стек) { return; }
+    холст.font = "400 100px " + стек;
+
+    var очко = Math.max(мера("х"), мера("x")) / 100;
+    if (!(очко > 0)) { return; }
+    var k = Math.round(Math.min(ПОТОЛОК, Math.max(1, ЭТАЛОН / очко)) * 1000) / 1000;
+    if (k - 1 < МЁРТВАЯ || !matchMedia(КОМПЬЮТЕР).matches) { k = 1; }
+    корень.setAttribute("data-очко", очко.toFixed(3));      // чтобы проверка могла сказать числа вслух
+    корень.setAttribute("data-поправка", k.toFixed(3));
+    if (k === 1) { return; }
+    for (i = 0; i < ТОКЕНЫ.length; i++) {
+      var было = стиль.getPropertyValue(ТОКЕНЫ[i]).trim();
+      if (было) { корень.style.setProperty(ТОКЕНЫ[i], "calc((" + было + ") * " + k + ")"); }
+    }
+  }
+
+  применить();
+
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(применить); }
+
+  addEventListener("resize", function () { ждём = ждём || requestAnimationFrame(применить); });
+})();
+</script>
+</head>
+<body class="с-липкой-кнопкой">
+<style>
+/* Карточки вокруг Андрея: вместо иконки - маленькая картинка блюда из библиотеки (слово Андрея 18.10) */
+#экран-01 .спутник__икон--блюдо{width:3.25rem;height:3.25rem;padding:0;overflow:hidden;border-radius:var(--радиус-малый);background:none}
+#экран-01 .спутник__икон--блюдо img{width:100%;height:100%;object-fit:cover;display:block}
+@media (min-width: 900px){
+  /* Заголовок длиннее макетного: на компьютере две строки поменьше, чтобы он не ложился на карточки и фигуру */
+  #экран-01 h1{font-size:clamp(40px,3.9vw,60px);line-height:1.08}
+  #экран-01 .центр__бок{top:38%}
+  #экран-01 .первый-экран__картинка{top:31%}
+}
+</style>
+<section class="блок блок--первый-экран первый-экран--центр светлый" id="экран-01" data-тип="первый-экран" data-схема="центр" data-ключ-макета="тёмная" data-картинка="вырез">
+  <header class="шапка">
+    <a class="шапка__лого" href="#">Вкусно жить!</a>
+    <span class="шапка__лиц"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.2-7.5 9.5-4.3-1.3-7.5-4.9-7.5-9.5V6L12 3z"/>
+</svg><span><span class="полн">Калории, белки, жиры и углеводы в каждом рецепте</span><span class="кратко">Калории и БЖУ в каждом рецепте</span></span></span>
+  </header>
+  <span class="кольцо кольцо--2"></span><span class="кольцо"></span>
+  <div class="блок__внутри">
+    <div class="центр__верх">
+      <p class="кикер кикер--пилюля"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M13 2L4 14h7l-1 8 9-12h-7z"/>
+</svg>Домашние рецепты на каждый день</p>
+      <h1>Готовьте на одного или на всю семью<span class="делитель">:</span> <span class="хвост">граммы пересчитаются <em class="акцент">сами</em></span></h1>
+    </div>
+    <figure class="картинка картинка--вырез первый-экран__картинка" style="--голова-в-кадре: 0.152; --макушка-в-кадре: 0.063"><span class="опора"></span><img src="img/povar-andrej-cut-vyrez.png" alt="Андрей Туманов в поварском кителе и колпаке" data-лицо="50,13" fetchpriority="high"></figure>
+    <div class="центр__бок центр__бок--лево">
+      <div class="карточка карточка--стекло спутник с1 парит"><div class="спутник__икон спутник__икон--блюдо"><img src="img/sup-tykva.webp" alt="Тыквенный суп-пюре" loading="lazy"></div><span><b>Пересчёт порций</b><span>одним нажатием</span></span><i class="спутник__шкала"></i></div>
+      <div class="карточка карточка--стекло спутник с2 парит парит--2"><div class="спутник__икон спутник__икон--блюдо"><img src="img/mintaj.webp" alt="Минтай с овощами" loading="lazy"></div><span><b>Калории и БЖУ</b><span>на каждую порцию</span></span></div>
+      <p class="лид">Выберите блюдо, укажите число порций и получите список продуктов и калории на порцию</p>
+      <div class="первый-экран__действие"><a class="кнопка кнопка--главная" href="#рецепты">Смотреть рецепты</a></div>
+    </div>
+    <div class="центр__бок центр__бок--право">
+      <div class="карточка карточка--стекло спутник с3 парит парит--3"><div class="спутник__икон спутник__икон--блюдо"><img src="img/grechka.webp" alt="Гречка с курицей" loading="lazy"></div><span><b>Поиск блюд</b><span>по продуктам дома</span></span></div>
+      <div class="карточка карточка--стекло спутник с4 парит парит--4"><div class="спутник__икон спутник__икон--блюдо"><img src="img/ovsyanka.webp" alt="Овсянка с яблоком" loading="lazy"></div><span><b>Простые блюда</b><span>из обычных продуктов</span></span><i class="спутник__шкала"></i></div>
+    </div>
+  </div>
+</section>
+<div class="липкая-кнопка"><a class="кнопка кнопка--главная" href="#рецепты">Смотреть рецепты</a></div>
+<script>
+(function () {
+  var СПИТ = "главная-на-виду";                       // класс на body; правило сна — в стилях
+  var кнопка = document.querySelector(".первый-экран__действие .кнопка--главная");
+  if (!кнопка || !window.IntersectionObserver) { return; }
+
+  function пометить(на_виду) { document.body.classList.toggle(СПИТ, !!на_виду); }
+
+  var б = кнопка.getBoundingClientRect();
+  пометить(б.bottom > 0 && б.top < (window.innerHeight || 0));
+
+  requestAnimationFrame(function () {
+    requestAnimationFrame(function () { document.body.classList.add("панель-с-переходом"); });
+  });
+
+  new IntersectionObserver(function (записи) {
+    пометить(записи[записи.length - 1].isIntersecting);
+  }, { threshold: 0 }).observe(кнопка);
+})();
+</script>
+</body>
+</html>
