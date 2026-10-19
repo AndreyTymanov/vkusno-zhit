@@ -52,7 +52,7 @@
   --тень-плиты: 0 40px 100px color-mix(in srgb, #14201E 70%, transparent);
   --кегль-h1: 34px;  --кегль-h2: clamp(28px, 3vw, 42px);
   --кегль-текст: 17px;  --кегль-лид: clamp(18px, 1.5vw, 22px);
-  --кегль-мелкий: 15px;  --кегль-кикер: 14px;  --разрядка-кикера: .16em;
+  --кегль-мелкий: 16px;  --кегль-кикер: 14px;  --разрядка-кикера: .16em;
   --кегль-цифра: 30px;
   --отступ-секции: clamp(64px, 9vw, 128px);  --отступ-блока: clamp(16px, 2vw, 28px);
   --отступ-секции-тихо: clamp(48px, 7vw, 96px);  --отступ-секции-громко: clamp(72px, 10.5vw, 140px);
@@ -141,7 +141,7 @@
 </nav>
 <span class="шапка__лиц"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
   <path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.2-7.5 9.5-4.3-1.3-7.5-4.9-7.5-9.5V6L12 3z"/>
-</svg><span><span class="полн">Калории, белки, жиры и углеводы в каждом рецепте</span><span class="кратко">Калории и БЖУ в каждом рецепте</span></span></span>
+</svg><span><span class="полн">Калории, белки, жиры и углеводы в каждом рецепте</span><span class="кратко">Калории в каждом рецепте</span></span></span>
 <button class="шапка-сайта__кнопка" type="button" aria-expanded="false" aria-controls="меню-сайта" hidden>Меню</button>
 </header>
   <span class="кольцо кольцо--2"></span><span class="кольцо"></span>
@@ -155,7 +155,7 @@
     <figure class="картинка картинка--вырез первый-экран__картинка" style="--голова-в-кадре: 0.152; --макушка-в-кадре: 0.063"><span class="опора"></span><img src="img/povar-andrej-cut-vyrez.png" alt="Андрей Туманов в поварском кителе и колпаке" data-лицо="50,13" fetchpriority="high"></figure>
     <div class="центр__бок центр__бок--лево">
       <div class="карточка карточка--стекло спутник с1 парит"><div class="спутник__икон спутник__икон--блюдо"><img src="img/sup-tykva.webp" alt="Тыквенный суп-пюре" loading="lazy"></div><span><b>Пересчёт порций</b><span>одним нажатием</span></span><i class="спутник__шкала"></i></div>
-      <div class="карточка карточка--стекло спутник с2 парит парит--2"><div class="спутник__икон спутник__икон--блюдо"><img src="img/mintaj.webp" alt="Минтай с овощами" loading="lazy"></div><span><b>Калории и БЖУ</b><span>на каждую порцию</span></span></div>
+      <div class="карточка карточка--стекло спутник с2 парит парит--2"><div class="спутник__икон спутник__икон--блюдо"><img src="img/mintaj.webp" alt="Минтай с овощами" loading="lazy"></div><span><b>Калории на порцию</b><span>белки, жиры, углеводы</span></span></div>
     </div>
     <div class="центр__бок центр__бок--право">
       <div class="карточка карточка--стекло спутник с3 парит парит--3"><div class="спутник__икон спутник__икон--блюдо"><img src="img/grechka.webp" alt="Гречка с курицей" loading="lazy"></div><span><b>Поиск блюд</b><span>по продуктам дома</span></span></div>
@@ -174,7 +174,7 @@
     <p class="секция__лид">Начните вводить название или продукт, например «тыква» или «курица», и список сразу сузится</p>
   </div>
   <label class="пк-поиск"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input type="search" placeholder="Блюдо или продукт…" aria-label="Поиск рецепта по названию или продукту"></label>
-  <div class="пк-фильтры" role="group" aria-label="Фильтры рецептов"><button type="button" data-группа="приём" data-знач="" aria-pressed="true" class="вкл">Все</button> <button type="button" data-группа="приём" data-знач="завтрак" aria-pressed="false">Завтрак</button> <button type="button" data-группа="приём" data-знач="обед" aria-pressed="false">Обед</button> <button type="button" data-группа="приём" data-знач="ужин" aria-pressed="false">Ужин</button> <button type="button" data-группа="приём" data-знач="перекус" aria-pressed="false">Перекус</button> <span class="пк-раздел" aria-hidden="true">|</span> <button type="button" data-группа="мин" data-знач="20" aria-pressed="false">До 20 минут</button> <button type="button" data-группа="мин" data-знач="40" aria-pressed="false">До 40 минут</button> <span class="пк-раздел" aria-hidden="true">|</span> <button type="button" data-группа="ккал" data-знач="300" aria-pressed="false">До 300 ккал</button> <button type="button" data-группа="ккал" data-знач="500" aria-pressed="false">До 500 ккал</button></div>
+  <div class="пк-фильтры" role="group" aria-label="Фильтры рецептов"><button type="button" data-группа="приём" data-знач="" aria-pressed="true" class="вкл">Все</button> <button type="button" data-группа="приём" data-знач="завтрак" aria-pressed="false">Завтрак</button> <button type="button" data-группа="приём" data-знач="обед" aria-pressed="false">Обед</button> <button type="button" data-группа="приём" data-знач="ужин" aria-pressed="false">Ужин</button> <span class="пк-раздел" aria-hidden="true">|</span> <button type="button" data-группа="мин" data-знач="20" aria-pressed="false">До 20 минут</button> <button type="button" data-группа="мин" data-знач="40" aria-pressed="false">До 40 минут</button> <span class="пк-раздел" aria-hidden="true">|</span> <button type="button" data-группа="ккал" data-знач="300" aria-pressed="false">До 300 ккал</button> <button type="button" data-группа="ккал" data-знач="500" aria-pressed="false">До 500 ккал</button></div>
   <p class="пк-пусто" hidden>Ничего не нашлось. Попробуйте другой продукт или снимите фильтр.</p>
   <div class="пк-разворот">
     <a class="пк-главный" href="mintaj-zapechennyj-s-ovoshchami.html">
@@ -184,27 +184,27 @@
       <p class="пк-мета">Ужин · 35 минут · 257 ккал на порцию</p>
     </a>
     <div class="пк-список">
-      <a class="пк-строка" href="mintaj-zapechennyj-s-ovoshchami.html" data-приём="ужин" data-мин="35" data-ккал="257" data-поиск="запеченный минтай с овощами минтай брокколи кабачок морковь лимон масло оливковое чеснок укроп соль черный перец" data-большая="img/mintaj.webp" data-адрес="mintaj-zapechennyj-s-ovoshchami" hidden>
+      <a class="пк-строка" href="mintaj-zapechennyj-s-ovoshchami.html" data-приём="ужин" data-мин="35" data-ккал="257" data-поиск="запеченный минтай с овощами минтай брокколи кабачок морковь лимон масло оливковое чеснок укроп соль черный перец рыба рыбой         " data-большая="img/mintaj.webp" data-адрес="mintaj-zapechennyj-s-ovoshchami" hidden>
         <figure class="фото"><img src="img/mini/mintaj.webp" alt="Запечённый минтай с овощами" loading="lazy" width="96" height="96"></figure>
         <span class="пк-текст"><span class="пк-приём">Ужин</span><span class="пк-имя">Запечённый минтай с овощами</span></span>
         <span class="пк-цифры"><b>35</b> мин <br><b>257</b> ккал</span>
       </a>
-      <a class="пк-строка" href="sup-pyure-iz-tykvy.html" data-приём="обед ужин" data-мин="35" data-ккал="221" data-поиск="суп-пюре из тыквы с морковью тыква морковь картофель лук репчатый вода сливки 10% масло оливковое тыквенные семечки соль" data-большая="img/sup-tykva.webp" data-адрес="sup-pyure-iz-tykvy">
+      <a class="пк-строка" href="sup-pyure-iz-tykvy.html" data-приём="обед ужин" data-мин="35" data-ккал="221" data-поиск="суп-пюре из тыквы с морковью тыква морковь картофель лук репчатый вода сливки 10% масло оливковое тыквенные семечки соль         " data-большая="img/sup-tykva.webp" data-адрес="sup-pyure-iz-tykvy">
         <figure class="фото"><img src="img/mini/sup-tykva.webp" alt="Суп-пюре из тыквы с морковью" loading="lazy" width="96" height="96"></figure>
         <span class="пк-текст"><span class="пк-приём">Обед, ужин</span><span class="пк-имя">Суп-пюре из тыквы с морковью</span></span>
         <span class="пк-цифры"><b>35</b> мин <br><b>221</b> ккал</span>
       </a>
-      <a class="пк-строка" href="kurica-s-grechkoj-i-ovoshchami.html" data-приём="обед" data-мин="30" data-ккал="436" data-поиск="куриная грудка с гречкой и овощами на одной сковороде куриное филе гречка вода морковь перец болгарский лук репчатый масло оливковое соль черный перец" data-большая="img/grechka.webp" data-адрес="kurica-s-grechkoj-i-ovoshchami">
+      <a class="пк-строка" href="kurica-s-grechkoj-i-ovoshchami.html" data-приём="обед" data-мин="30" data-ккал="436" data-поиск="куриная грудка с гречкой и овощами на одной сковороде куриное филе гречка вода морковь перец болгарский лук репчатый масло оливковое соль черный перец курица курицей мясо        " data-большая="img/grechka.webp" data-адрес="kurica-s-grechkoj-i-ovoshchami">
         <figure class="фото"><img src="img/mini/grechka.webp" alt="Куриная грудка с гречкой и овощами на одной сковороде" loading="lazy" width="96" height="96"></figure>
         <span class="пк-текст"><span class="пк-приём">Обед</span><span class="пк-имя">Куриная грудка с гречкой и овощами на одной сковороде</span></span>
         <span class="пк-цифры"><b>30</b> мин <br><b>436</b> ккал</span>
       </a>
-      <a class="пк-строка" href="omlet-so-shpinatom-v-duhovke.html" data-приём="завтрак" data-мин="25" data-ккал="303" data-поиск="омлет со шпинатом и помидорами в духовке яйцо куриное молоко 2,5% шпинат помидор сыр твердый масло оливковое соль черный перец" data-большая="img/omlet.webp" data-адрес="omlet-so-shpinatom-v-duhovke">
+      <a class="пк-строка" href="omlet-so-shpinatom-v-duhovke.html" data-приём="завтрак" data-мин="25" data-ккал="303" data-поиск="омлет со шпинатом и помидорами в духовке яйцо куриное молоко 2,5% шпинат помидор сыр твердый масло оливковое соль черный перец яйца яйцо   помидоры томаты сыром   " data-большая="img/omlet.webp" data-адрес="omlet-so-shpinatom-v-duhovke">
         <figure class="фото"><img src="img/mini/omlet.webp" alt="Омлет со шпинатом и помидорами в духовке" loading="lazy" width="96" height="96"></figure>
         <span class="пк-текст"><span class="пк-приём">Завтрак</span><span class="пк-имя">Омлет со шпинатом и помидорами в духовке</span></span>
         <span class="пк-цифры"><b>25</b> мин <br><b>303</b> ккал</span>
       </a>
-      <a class="пк-строка" href="ovsyanka-s-yablokom-i-koricej.html" data-приём="завтрак" data-мин="10" data-ккал="412" data-поиск="овсянка на молоке с яблоком и корицей овсяные хлопья молоко 2,5% вода яблоко грецкий орех мед корица соль" data-большая="img/ovsyanka.webp" data-адрес="ovsyanka-s-yablokom-i-koricej">
+      <a class="пк-строка" href="ovsyanka-s-yablokom-i-koricej.html" data-приём="завтрак" data-мин="10" data-ккал="412" data-поиск="овсянка на молоке с яблоком и корицей овсяные хлопья молоко 2,5% вода яблоко грецкий орех мед корица соль    яблоки    " data-большая="img/ovsyanka.webp" data-адрес="ovsyanka-s-yablokom-i-koricej">
         <figure class="фото"><img src="img/mini/ovsyanka.webp" alt="Овсянка на молоке с яблоком и корицей" loading="lazy" width="96" height="96"></figure>
         <span class="пк-текст"><span class="пк-приём">Завтрак</span><span class="пк-имя">Овсянка на молоке с яблоком и корицей</span></span>
         <span class="пк-цифры"><b>10</b> мин <br><b>412</b> ккал</span>
@@ -221,7 +221,7 @@
       разворот=э.querySelector('.пк-разворот'), N=12, сколько=N, ф={приём:'',мин:0,ккал:0};
   function норм(т){return т.toLowerCase().replace(/ё/g,'е').trim();}
   function подходит(к){
-    var д=к.dataset, слова=норм(поле.value).split(/\s+/).filter(Boolean);
+    var д=к.dataset, слова=норм(поле.value).split(/\s+/).filter(Boolean).map(function(с){return с.length>3?с.slice(0,Math.max(3,с.length-1)):с;});
     if(ф.приём && (' '+д.приём+' ').indexOf(' '+ф.приём+' ')<0) return false;
     if(ф.мин && +д.мин>ф.мин) return false;
     if(ф.ккал && +д.ккал>ф.ккал) return false;
@@ -256,6 +256,12 @@
     });
   });
   ещё.addEventListener('click',function(){сколько+=N;показать();});
+  if('IntersectionObserver' in window){   // нижняя кнопка «Смотреть рецепты» не висит над самим списком
+    new IntersectionObserver(function(з){   // кнопка стоит ниже этого скрипта - ищем её в момент срабатывания
+      var л=document.querySelector('.липкая-кнопка'), в=з[0].isIntersecting; if(!л) return;
+      л.style.transition='transform .3s,opacity .3s';
+      л.style.transform=в?'translateY(100%)':''; л.style.opacity=в?'0':''; л.style.pointerEvents=в?'none':''; }).observe(э);
+  }
   показать();
 })();
 </script>
@@ -265,7 +271,7 @@
   <div class="пк-разворот">
     <div class="пк-листок" aria-hidden="true">
       <div class="пк-порции"><span class="пк-кн">−</span><b>4 порции</b><span class="пк-кн">+</span></div>
-      <ul class="пк-состав"><li><span>Овсяные хлопья</span><b>100 г</b></li><li><span>Молоко 2,5%</span><b>400 мл</b></li><li><span>Вода</span><b>100 мл</b></li><li><span>Яблоко</span><b>160 г</b></li><li><span>Грецкий орех</span><b>20 г</b></li></ul>
+      <ul class="пк-состав"><li><span>Овсяные хлопья</span><b>200 г</b></li><li><span>Молоко 2,5%</span><b>800 мл</b></li><li><span>Вода</span><b>200 мл</b></li><li><span>Яблоко</span><b>320 г</b></li><li><span>Грецкий орех</span><b>40 г</b></li></ul>
       <p class="пк-итог">412 ккал на порцию · 1648 ккал на всё блюдо</p>
     </div>
     <div>
@@ -275,7 +281,7 @@
       <ol class="пк-пункты">
       <li><span class="пк-н">1</span><div><h3>Выберите число порций</h3><p>Кнопками «минус» и «плюс», от 1 до 12</p></div></li>
       <li><span class="пк-н">2</span><div><h3>Посмотрите состав</h3><p>Граммы всех продуктов уже пересчитаны на ваше число порций</p></div></li>
-      <li><span class="пк-н">3</span><div><h3>Сверьте калории и БЖУ</h3><p>На одну порцию и на всё блюдо</p></div></li>
+      <li><span class="пк-н">3</span><div><h3>Сверьте калории, белки, жиры и углеводы</h3><p>На одну порцию и на всё блюдо</p></div></li>
       <li><span class="пк-н">4</span><div><h3>Готовьте по шагам</h3><p>Коротко, с временем и температурой</p></div></li>
       </ol>
       <p class="пк-сноска">Калории, белки, жиры и углеводы посчитаны по составу рецепта, по средним табличным значениям продуктов на 100 граммов. У разных марок продуктов цифры немного отличаются.</p>
