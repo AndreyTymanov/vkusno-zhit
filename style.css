@@ -1671,3 +1671,74 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
 
   body.панель-с-переходом .липкая-кнопка { transition: none; }
 }
+
+/* экран 02 */
+#экран-02 .пк-шапка{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:28px}
+#экран-02 .пк-шапка h2{margin:6px 0 0}
+#экран-02 .пк-шапка .секция__лид{margin:0}
+#экран-02 .пк-поиск{display:flex;align-items:center;gap:12px;padding:16px 4px;border-bottom:var(--нить) solid;font-size:var(--кегль-лид)}
+#экран-02.светлый .пк-поиск{border-color:var(--цвет-текст);color:var(--цвет-текст-тихий)}
+#экран-02.тёмный .пк-поиск{border-color:var(--цвет-тёмный-текст);color:var(--цвет-тёмный-текст)}
+#экран-02 .пк-поиск svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:2}
+#экран-02 .пк-фильтры{display:flex;flex-wrap:wrap;gap:6px 22px;margin:16px 0 36px;font-size:var(--кегль-мелкий);font-weight:600}
+#экран-02 .пк-фильтры span{padding-bottom:4px;border-bottom:var(--нить) solid transparent}
+#экран-02.светлый .пк-фильтры .вкл{color:var(--цвет-акцент);border-color:var(--цвет-акцент)}
+#экран-02.тёмный .пк-фильтры .вкл{color:var(--цвет-тёплый);border-color:var(--цвет-тёплый)}
+#экран-02 .пк-разворот{display:grid;grid-template-columns:1.05fr 1fr;gap:40px}
+#экран-02 .пк-главный{display:block;text-decoration:none;color:inherit}
+#экран-02 .пк-главный .фото{margin:0;aspect-ratio:4/3;overflow:hidden;border-radius:var(--радиус-карточки)}
+#экран-02 .пк-главный img,#экран-02 .пк-строка img{width:100%;height:100%;object-fit:cover;display:block}
+#экран-02 .пк-метка{display:inline-block;margin:20px 0 8px;padding:6px 14px;border-radius:9em;font-size:var(--кегль-кикер);font-weight:700}
+#экран-02.светлый .пк-метка{background:var(--цвет-акцент-маркер);color:var(--цвет-на-акценте)}
+#экран-02.тёмный .пк-метка{background:var(--цвет-тёплый);color:var(--цвет-тёмный-фон)}
+#экран-02 .пк-главный h3{margin:0;font-size:var(--кегль-h2);line-height:1.1}
+#экран-02 .пк-главный p{margin:10px 0 0}
+#экран-02.светлый .пк-главный p{color:var(--цвет-текст-мягкий)}
+#экран-02 .пк-список{display:flex;flex-direction:column}
+#экран-02 .пк-строка{display:grid;grid-template-columns:96px 1fr auto;gap:18px;align-items:center;padding:16px 0;text-decoration:none;color:inherit;border-bottom:1px solid}
+#экран-02.светлый .пк-строка{border-color:var(--цвет-линия)}
+#экран-02.тёмный .пк-строка{border-color:color-mix(in srgb,var(--цвет-тёмный-текст) 18%,transparent)}
+#экран-02 .пк-строка:first-child{padding-top:0}
+#экран-02 .пк-строка .фото{margin:0;width:96px;height:96px;overflow:hidden;border-radius:var(--радиус-малый)}
+#экран-02 .пк-текст{display:grid;gap:4px}
+#экран-02 .пк-приём{font-size:var(--кегль-кикер);letter-spacing:var(--разрядка-кикера);text-transform:uppercase;font-weight:700}
+#экран-02.светлый .пк-приём{color:var(--цвет-акцент)}
+#экран-02.тёмный .пк-приём{color:var(--цвет-тёплый)}
+#экран-02 .пк-имя{font-weight:700;line-height:1.3}
+#экран-02 .пк-цифры{text-align:right;font-size:var(--кегль-мелкий);line-height:1.5}
+#экран-02.светлый .пк-цифры{color:var(--цвет-текст-тихий)}
+#экран-02.светлый .пк-цифры b{color:var(--цвет-текст)}
+#экран-02 .пк-ещё{margin-top:20px;font-weight:700;text-decoration:underline;text-underline-offset:6px}
+#экран-02.светлый .пк-ещё{color:var(--цвет-акцент)}
+@media (max-width:899px){#экран-02 .пк-шапка,#экран-02 .пк-разворот{grid-template-columns:1fr;gap:16px}#экран-02 .пк-разворот{gap:28px}#экран-02 .пк-строка{grid-template-columns:72px 1fr;gap:14px}#экран-02 .пк-строка .фото{width:72px;height:72px}#экран-02 .пк-цифры{grid-column:2;text-align:left}#экран-02 .пк-цифры br{display:none}#экран-02 .пк-фильтры{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap}}
+
+/* экран 03 */
+#экран-03 .пк-разворот{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+#экран-03 .пк-листок{padding:28px;border-radius:var(--радиус-карточки);transform:rotate(-1.5deg)}
+#экран-03.светлый .пк-листок{background:var(--цвет-фон-карточки);box-shadow:var(--тень-глубокая)}
+#экран-03.тёмный .пк-листок{background:var(--цвет-тёмный-фон-2);box-shadow:var(--тень-глубокая)}
+#экран-03 .пк-порции{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-radius:9em;margin-bottom:18px}
+#экран-03.светлый .пк-порции{background:var(--цвет-фон-2)}
+#экран-03.тёмный .пк-порции{background:var(--цвет-тёмный-фон)}
+#экран-03 .пк-порции b{font-size:var(--кегль-лид)}
+#экран-03 .пк-кн{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:var(--кегль-лид)}
+#экран-03.светлый .пк-кн{background:var(--цвет-акцент);color:var(--цвет-на-акценте)}
+#экран-03.тёмный .пк-кн{background:var(--цвет-тёплый);color:var(--цвет-тёмный-фон)}
+#экран-03 .пк-состав{list-style:none;margin:0;padding:0}
+#экран-03 .пк-состав li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dashed}
+#экран-03.светлый .пк-состав li{border-color:var(--цвет-линия)}
+#экран-03.тёмный .пк-состав li{border-color:color-mix(in srgb,var(--цвет-тёмный-текст) 20%,transparent)}
+#экран-03 .пк-итог{margin:16px 0 0;font-size:var(--кегль-мелкий);font-weight:600}
+#экран-03.светлый .пк-итог{color:var(--цвет-акцент)}
+#экран-03.тёмный .пк-итог{color:var(--цвет-тёплый)}
+#экран-03 .пк-пункты{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:20px}
+#экран-03 .пк-пункты li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start}
+#экран-03 .пк-н{font-size:var(--кегль-цифра);font-weight:700;line-height:1}
+#экран-03.светлый .пк-н{color:var(--цвет-акцент-маркер)}
+#экран-03.тёмный .пк-н{color:var(--цвет-тёплый)}
+#экран-03 .пк-пункты h3{margin:0;font-size:var(--кегль-лид)}
+#экран-03 .пк-пункты p{margin:4px 0 0}
+#экран-03.светлый .пк-пункты p{color:var(--цвет-текст-мягкий)}
+#экран-03 .пк-сноска{margin:28px 0 0;font-size:var(--кегль-мелкий)}
+#экран-03.светлый .пк-сноска{color:var(--цвет-текст-тихий)}
+@media (max-width:899px){#экран-03 .пк-разворот{grid-template-columns:1fr;gap:36px}#экран-03 .пк-листок{transform:none;order:2}}
